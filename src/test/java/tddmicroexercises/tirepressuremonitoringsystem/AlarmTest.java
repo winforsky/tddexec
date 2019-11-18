@@ -15,8 +15,8 @@ public class AlarmTest {
 
 
         //TO DO:检查到正常的胎压值时不应该报警
-        //TODO:检查到正常范围之外的胎压值时应该报警
-        //TODO:跟随在正常范围之外的胎压值之后的正常胎压值应该不会让之前所引发的警报停止
+        //TO DO:检查到正常范围之外的胎压值时应该报警
+        //TO DO:跟随在正常范围之外的胎压值之后的正常胎压值应该不会让之前所引发的警报停止
 
     }
 
@@ -34,6 +34,46 @@ public class AlarmTest {
 
         //Assert
         assertFalse(alarm.isAlarmOn());
+    }
+
+    @Test
+    public void test_a_pressure_value_outside_the_range_should_raise_the_alarm(){
+        //Arrange
+        //因为Alarm依赖Sensor的具体实现，为了增加灵活性和可测试性，需要修改实现方式
+//        Alarm alarm = new Alarm();
+        StubSensor stubSensor = new StubSensor();
+        stubSensor.arrangeNextPressurePsiValue(Alarm.HIGH_PRESSURE_THRESHOLD+1);
+        Alarm alarm = new Alarm(stubSensor);
+
+        //Action
+        alarm.check();
+
+        //Assert
+        assertTrue(alarm.isAlarmOn());
+    }
+
+    @Test
+    public void test_a_normal_pressure_value_after_a_pressure_value_outside_the_range_should_not_stop_the_alarm(){
+        //Arrange
+        //因为Alarm依赖Sensor的具体实现，为了增加灵活性和可测试性，需要修改实现方式
+//        Alarm alarm = new Alarm();
+        StubSensor stubSensor = new StubSensor();
+        stubSensor.arrangeNextPressurePsiValue(Alarm.LOW_PRESSURE_THRESHOLD - 1);
+        Alarm alarm = new Alarm(stubSensor);
+
+        //Action
+        alarm.check();
+
+        //Assert
+        assertTrue(alarm.isAlarmOn());
+
+        stubSensor.arrangeNextPressurePsiValue(Alarm.LOW_PRESSURE_THRESHOLD);
+
+        //Action
+        alarm.check();
+
+        //Assert
+        assertTrue(alarm.isAlarmOn());
     }
 
 }
