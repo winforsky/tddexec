@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+//测试代码
 public class AlarmTest {
     @Test
     public void testcheck() throws Exception {
@@ -22,7 +23,11 @@ public class AlarmTest {
     @Test
     public void test_a_normal_pressure_value_should_not_raise_the_alarm(){
         //Arrange
-        Alarm alarm = new Alarm();
+        //因为Alarm依赖Sensor的具体实现，为了增加灵活性和可测试性，需要修改实现方式
+//        Alarm alarm = new Alarm();
+        StubSensor stubSensor = new StubSensor();
+        stubSensor.arrangeNextPressurePsiValue(Alarm.LOW_PRESSURE_THRESHOLD);
+        Alarm alarm = new Alarm(stubSensor);
 
         //Action
         alarm.check();
