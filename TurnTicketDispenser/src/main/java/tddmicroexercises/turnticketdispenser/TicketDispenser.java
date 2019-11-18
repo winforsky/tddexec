@@ -1,5 +1,6 @@
 package tddmicroexercises.turnticketdispenser;
 
+//SUT system under test
 public class TicketDispenser
 {
     //TODO:拟新增特性：VIP客户的票号从1001开始
@@ -13,4 +14,8 @@ public class TicketDispenser
 
         return newTurnTicket;
     }
+
+    //TO DO: 新得到的票号 比 之前得到的票号 大
+    //TO DO: 新得到的票号 比 另一台取号机上之前得到的票号 大
+    //TODO: 给定取号机11号，那么取号机应该能得到11号
 }
