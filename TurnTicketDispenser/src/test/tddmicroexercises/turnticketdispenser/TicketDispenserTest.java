@@ -5,6 +5,7 @@ import org.junit.Test;
 
 public class TicketDispenserTest
 {
+
     //TODO:拟新增特性：VIP客户的票号从1001开始
     //TODO:拟新增特性：普通客户的票号从2001开始
 
@@ -64,26 +65,26 @@ public class TicketDispenserTest
     @Test
     public void test_ticket_number_sequence_of_the_vip_customer_starts_from_1001(){
         //Arrange
-        TurnNumberSequence vipTurnNumberSequence = new TurnNumberSequence(1001);
+        TurnNumberSequence vipTurnNumberSequence = new TurnNumberSequence(TurnNumberSequence.VIP_FIRST_NUMBER);
         TicketDispenser ticketDispenser = new TicketDispenser(vipTurnNumberSequence);
 
         //ACTION
         TurnTicket ticket = ticketDispenser.getTurnTicket();
 
         //ASSERT
-        Assert.assertEquals(1001, ticket.getTurnNumber());
+        Assert.assertEquals(TurnNumberSequence.VIP_FIRST_NUMBER, ticket.getTurnNumber());
     }
 
     @Test
     public void test_ticket_number_sequence_of_the_regular_customer_starts_from_2001(){
         //Arrange
-        TurnNumberSequence regularTurnNumberSequence = new TurnNumberSequence(2001);
+        TurnNumberSequence regularTurnNumberSequence = new TurnNumberSequence(TurnNumberSequence.REGULAR_FIRST_NUMBER);
         TicketDispenser ticketDispenser = new TicketDispenser(regularTurnNumberSequence);
 
         //ACTION
         TurnTicket ticket = ticketDispenser.getTurnTicket();
 
         //ASSERT
-        Assert.assertEquals(2001, ticket.getTurnNumber());
+        Assert.assertEquals(TurnNumberSequence.REGULAR_FIRST_NUMBER, ticket.getTurnNumber());
     }
 }
