@@ -8,17 +8,21 @@ public class UnicodeFileToHtmlTextConverter
 {
 //    private String fullFilenameWithPath;
     private Reader reader;
+    private StringEscaper stringEscaper;
 
     public UnicodeFileToHtmlTextConverter(String fullFilenameWithPath) throws FileNotFoundException {
 //        this.fullFilenameWithPath = fullFilenameWithPath;
-        this.reader = new FileReader(fullFilenameWithPath);
+//        this.reader = new FileReader(fullFilenameWithPath);
+        this(new FileReader(fullFilenameWithPath), new StringEscaper());
     }
 
     public UnicodeFileToHtmlTextConverter(Reader reader) {
-        this.reader = reader;
+        this(reader, new StringEscaper());
     }
 
-    public UnicodeFileToHtmlTextConverter() {
+    public UnicodeFileToHtmlTextConverter(Reader reader, StringEscaper stringEscaper) {
+        this.reader = reader;
+        this.stringEscaper = stringEscaper;
     }
 
     //TODO:新增特性：将一个unicode的纯文本字符串转化为HTML编码的字符串
@@ -36,7 +40,8 @@ public class UnicodeFileToHtmlTextConverter
             while (line != null)
             {
                 //TODO:直接依赖第三方库，违反依赖倒置和开闭原则，建议使用一个类来封装对第三方库的使用
-                html += StringEscapeUtils.escapeHtml4(line);
+                html += this.stringEscaper.escapeHtml4(line);
+//                html += StringEscapeUtils.escapeHtml4(line);
                 html += "<br />";
                 line = reader.readLine();
             }
