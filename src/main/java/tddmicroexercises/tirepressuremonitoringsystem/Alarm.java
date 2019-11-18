@@ -15,6 +15,7 @@ public class Alarm
     //TO DO:此处依赖具体的Sensor类，违反依赖倒置原则和开闭原则
 
 //    private Sensor sensor = new Sensor();
+
     private Transducer sensor;
 
     private boolean alarmOn = false;
