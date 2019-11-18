@@ -2,6 +2,7 @@ package tddmicroexercises.turnticketdispenser;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 public class TicketDispenserTest
 {
@@ -86,5 +87,20 @@ public class TicketDispenserTest
 
         //ASSERT
         Assert.assertEquals(TurnNumberSequence.REGULAR_FIRST_NUMBER, ticket.getTurnNumber());
+    }
+
+    @Test
+    public void test_a_new_ticket_number_should_11_when_given_ticket_number_11_from_ticket_dispenser_mockio(){
+        //Arrange
+        TurnNumberSequence turnNumberSequence = Mockito.mock(TurnNumberSequence.class);
+        Mockito.when(turnNumberSequence.getNextTurnNumber()).thenReturn(11);
+        TicketDispenser ticketDispenser = new TicketDispenser(turnNumberSequence);
+
+        //ACTION
+        TurnTicket ticket = ticketDispenser.getTurnTicket();
+
+        //ASSERT
+        Assert.assertEquals(11, ticket.getTurnNumber());
+        Mockito.verify(turnNumberSequence).getNextTurnNumber();
     }
 }
