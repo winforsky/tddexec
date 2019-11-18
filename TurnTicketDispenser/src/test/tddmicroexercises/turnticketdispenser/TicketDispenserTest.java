@@ -15,9 +15,9 @@ public class TicketDispenserTest
         Assert.assertFalse ("false", false);
     }
 
-    //TODO: 新得到的票号 比 之前得到的票号 大
-    //TODO: 新得到的票号 比 另一台取号机上之前得到的票号 大
-    //TODO: 给定取号机11号，那么取号机应该能得到11号
+    //TO DO: 新得到的票号 比 之前得到的票号 大
+    //TO DO: 新得到的票号 比 另一台取号机上之前得到的票号 大
+    //TO DO: 给定取号机11号，那么取号机应该能得到11号
 
     @Test
     public void test_a_new_ticket_number_should_bigger_than_previous_ticket_number(){

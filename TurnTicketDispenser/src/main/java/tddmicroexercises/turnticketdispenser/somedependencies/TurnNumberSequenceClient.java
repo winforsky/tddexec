@@ -10,8 +10,8 @@ public class TurnNumberSequenceClient
     public TurnNumberSequenceClient()
     {
         int nextUniqueTicketNumber;
-        nextUniqueTicketNumber = TurnNumberSequence.getNextTurnNumber();
-        nextUniqueTicketNumber = TurnNumberSequence.getNextTurnNumber();
-        nextUniqueTicketNumber = TurnNumberSequence.getNextTurnNumber();
+        nextUniqueTicketNumber = new TurnNumberSequence().getNextTurnNumber();
+        nextUniqueTicketNumber = new TurnNumberSequence().getNextTurnNumber();
+        nextUniqueTicketNumber = new TurnNumberSequence().getNextTurnNumber();
     }
 }

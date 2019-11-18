@@ -10,8 +10,8 @@ public class TurnTicketAndSequenceClient
 
     public TurnTicketAndSequenceClient()
     {
-        TurnTicket turnTicket1 = new TurnTicket(TurnNumberSequence.getNextTurnNumber());
-        TurnTicket turnTicket2 = new TurnTicket(TurnNumberSequence.getNextTurnNumber());
-        TurnTicket turnTicket3 = new TurnTicket(TurnNumberSequence.getNextTurnNumber());
+        TurnTicket turnTicket1 = new TurnTicket(new TurnNumberSequence().getNextTurnNumber());
+        TurnTicket turnTicket2 = new TurnTicket(new TurnNumberSequence().getNextTurnNumber());
+        TurnTicket turnTicket3 = new TurnTicket(new TurnNumberSequence().getNextTurnNumber());
     }
 }

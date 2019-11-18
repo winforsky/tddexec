@@ -5,8 +5,10 @@ public class TurnNumberSequence
 {
     private static int turnNumber = 0;
 
-    public static int getNextTurnNumber()
+    public int getNextTurnNumber()
     {
         return turnNumber++;
     }
+
+
 }
