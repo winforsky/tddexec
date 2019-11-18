@@ -19,4 +19,16 @@ public class AlarmTest {
 
     }
 
+    @Test
+    public void test_a_normal_pressure_value_should_not_raise_the_alarm(){
+        //Arrange
+        Alarm alarm = new Alarm();
+
+        //Action
+        alarm.check();
+
+        //Assert
+        assertFalse(alarm.isAlarmOn());
+    }
+
 }

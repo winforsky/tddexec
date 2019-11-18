@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0f97a92-9d47-40e8-85e1-27cedeac28fc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tddmicroexercises/tirepressuremonitoringsystem/AlarmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tddmicroexercises/tirepressuremonitoringsystem/AlarmTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +33,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AlarmTest">
+  <component name="RunManager" selected="JUnit.AlarmTest.test_a_normal_pressure_value_should_not_raise_the_alarm">
     <configuration name="AlarmTest.testCheck" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
       <module name="TirePressureMonitoringSystem" />
       <extension name="coverage">
@@ -64,6 +65,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AlarmTest.test_a_normal_pressure_value_should_not_raise_the_alarm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TirePressureMonitoringSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tddmicroexercises.tirepressuremonitoringsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tddmicroexercises.tirepressuremonitoringsystem" />
+      <option name="MAIN_CLASS_NAME" value="tddmicroexercises.tirepressuremonitoringsystem.AlarmTest" />
+      <option name="METHOD_NAME" value="test_a_normal_pressure_value_should_not_raise_the_alarm" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AlarmTest.testcheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TirePressureMonitoringSystem" />
       <extension name="coverage">
@@ -82,6 +99,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AlarmTest.test_a_normal_pressure_value_should_not_raise_the_alarm" />
         <item itemvalue="JUnit.AlarmTest" />
         <item itemvalue="JUnit.AlarmTest.testcheck" />
         <item itemvalue="Android JUnit.AlarmTest.testCheck" />
@@ -98,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574047135201</updated>
-      <workItem from="1574047136499" duration="1076000" />
+      <workItem from="1574047136499" duration="1332000" />
     </task>
     <servers />
   </component>
