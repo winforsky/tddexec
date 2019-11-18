@@ -60,4 +60,17 @@ public class TicketDispenserTest
         Assert.assertEquals(11, ticket.getTurnNumber());
         turnNumberSequence.verifyMethodGetNextTurnNumberCalledOnce();
     }
+
+    @Test
+    public void test_ticket_number_sequence_of_the_vip_customer_starts_from_1001(){
+        //Arrange
+        TurnNumberSequence vipTurnNumberSequence = new TurnNumberSequence(1001);
+        TicketDispenser ticketDispenser = new TicketDispenser(vipTurnNumberSequence);
+
+        //ACTION
+        TurnTicket ticket = ticketDispenser.getTurnTicket();
+
+        //ASSERT
+        Assert.assertEquals(1001, ticket.getTurnNumber());
+    }
 }
