@@ -9,8 +9,8 @@ public class AnAlarmClient1
 
     public AnAlarmClient1()
     {
-        Alarm anAlarm = new Alarm();
-        anAlarm.check();
-        boolean isAlarmOn = anAlarm.isAlarmOn();
+//        Alarm anAlarm = new Alarm();
+//        anAlarm.check();
+//        boolean isAlarmOn = anAlarm.isAlarmOn();
     }
 }

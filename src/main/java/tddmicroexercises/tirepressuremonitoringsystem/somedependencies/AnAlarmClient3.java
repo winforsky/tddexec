@@ -11,7 +11,7 @@ public class AnAlarmClient3
 
     public AnAlarmClient3()
     {
-        _anAlarm = new Alarm();
+//        _anAlarm = new Alarm();
     }
 
     public void DoSomething()

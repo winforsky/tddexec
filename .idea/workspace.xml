@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0f97a92-9d47-40e8-85e1-27cedeac28fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/StubSensor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/Transducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/Alarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/Alarm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tddmicroexercises/tirepressuremonitoringsystem/AlarmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tddmicroexercises/tirepressuremonitoringsystem/AlarmTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tddmicroexercises/tirepressuremonitoringsystem/Alarm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/Sensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/Sensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/StubSensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/StubSensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/Transducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/Transducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/somedependencies/AnAlarmClient1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/somedependencies/AnAlarmClient1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/somedependencies/AnAlarmClient2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/somedependencies/AnAlarmClient2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/somedependencies/AnAlarmClient3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/somedependencies/AnAlarmClient3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tddmicroexercises/tirepressuremonitoringsystem/Sensor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tddmicroexercises/tirepressuremonitoringsystem/Sensor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tddmicroexercises/tirepressuremonitoringsystem/StubSensor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tddmicroexercises/tirepressuremonitoringsystem/somedependencies/AnAlarmClient1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tddmicroexercises/tirepressuremonitoringsystem/somedependencies/AnAlarmClient1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tddmicroexercises/tirepressuremonitoringsystem/somedependencies/AnAlarmClient2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tddmicroexercises/tirepressuremonitoringsystem/somedependencies/AnAlarmClient2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tddmicroexercises/tirepressuremonitoringsystem/somedependencies/AnAlarmClient3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tddmicroexercises/tirepressuremonitoringsystem/somedependencies/AnAlarmClient3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tddmicroexercises/tirepressuremonitoringsystem/AlarmTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tddmicroexercises/tirepressuremonitoringsystem/AlarmTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AlarmTest.test_a_normal_pressure_value_should_not_raise_the_alarm">
+  <component name="RunManager" selected="JUnit.AlarmTest">
     <configuration name="AlarmTest.testCheck" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
       <module name="TirePressureMonitoringSystem" />
       <extension name="coverage">
@@ -118,8 +126,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AlarmTest.test_a_normal_pressure_value_should_not_raise_the_alarm" />
         <item itemvalue="JUnit.AlarmTest" />
+        <item itemvalue="JUnit.AlarmTest.test_a_normal_pressure_value_should_not_raise_the_alarm" />
         <item itemvalue="JUnit.AlarmTest.testcheck" />
         <item itemvalue="Android JUnit.AlarmTest.testCheck" />
       </list>
@@ -135,7 +143,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574047135201</updated>
-      <workItem from="1574047136499" duration="2285000" />
+      <workItem from="1574047136499" duration="2647000" />
     </task>
     <servers />
   </component>

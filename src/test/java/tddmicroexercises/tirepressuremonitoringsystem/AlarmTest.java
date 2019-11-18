@@ -14,7 +14,7 @@ public class AlarmTest {
         //TODO:a normal pressure value after a value outside the range should stop the alarm
 
 
-        //TODO:检查到正常的胎压值时不应该报警
+        //TO DO:检查到正常的胎压值时不应该报警
         //TODO:检查到正常范围之外的胎压值时应该报警
         //TODO:跟随在正常范围之外的胎压值之后的正常胎压值应该不会让之前所引发的警报停止
 
