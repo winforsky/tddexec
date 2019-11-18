@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6bd99aae-dcb2-4100-9e57-e5f9be62e491" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TmGX4XUW2sJ9fBwhPIlT9saOmx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="tddmicroexercises.turnticketdispenser" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="tddmicroexercises.turnticketdispenser" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TicketDispenserTest.test_a_new_ticket_number_should_11_when_given_ticket_number_11_from_ticket_dispenser_mockio">
+    <configuration name="TicketDispenserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TurnTicketDispenser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tddmicroexercises.turnticketdispenser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tddmicroexercises.turnticketdispenser" />
+      <option name="MAIN_CLASS_NAME" value="tddmicroexercises.turnticketdispenser.TicketDispenserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketDispenserTest.test_a_new_ticket_number_should_11_when_given_ticket_number_11_from_ticket_dispenser_mockio" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TurnTicketDispenser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tddmicroexercises.turnticketdispenser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tddmicroexercises.turnticketdispenser" />
+      <option name="MAIN_CLASS_NAME" value="tddmicroexercises.turnticketdispenser.TicketDispenserTest" />
+      <option name="METHOD_NAME" value="test_a_new_ticket_number_should_11_when_given_ticket_number_11_from_ticket_dispenser_mockio" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketDispenserTest.test_a_new_ticket_number_should_bigger_than_previous_ticket_number_from_another_ticket_dispenser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TurnTicketDispenser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tddmicroexercises.turnticketdispenser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tddmicroexercises.turnticketdispenser" />
+      <option name="MAIN_CLASS_NAME" value="tddmicroexercises.turnticketdispenser.TicketDispenserTest" />
+      <option name="METHOD_NAME" value="test_a_new_ticket_number_should_bigger_than_previous_ticket_number_from_another_ticket_dispenser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketDispenserTest.test_ticket_number_sequence_of_the_regular_customer_starts_from_2001" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TurnTicketDispenser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tddmicroexercises.turnticketdispenser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tddmicroexercises.turnticketdispenser" />
+      <option name="MAIN_CLASS_NAME" value="tddmicroexercises.turnticketdispenser.TicketDispenserTest" />
+      <option name="METHOD_NAME" value="test_ticket_number_sequence_of_the_regular_customer_starts_from_2001" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketDispenserTest.test_ticket_number_sequence_of_the_vip_customer_starts_from_1001" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TurnTicketDispenser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tddmicroexercises.turnticketdispenser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tddmicroexercises.turnticketdispenser" />
+      <option name="MAIN_CLASS_NAME" value="tddmicroexercises.turnticketdispenser.TicketDispenserTest" />
+      <option name="METHOD_NAME" value="test_ticket_number_sequence_of_the_vip_customer_starts_from_1001" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TicketDispenserTest.test_a_new_ticket_number_should_11_when_given_ticket_number_11_from_ticket_dispenser_mockio" />
+        <item itemvalue="JUnit.TicketDispenserTest" />
+        <item itemvalue="JUnit.TicketDispenserTest.test_ticket_number_sequence_of_the_regular_customer_starts_from_2001" />
+        <item itemvalue="JUnit.TicketDispenserTest.test_ticket_number_sequence_of_the_vip_customer_starts_from_1001" />
+        <item itemvalue="JUnit.TicketDispenserTest.test_a_new_ticket_number_should_bigger_than_previous_ticket_number_from_another_ticket_dispenser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6bd99aae-dcb2-4100-9e57-e5f9be62e491" name="Default Changelist" comment="" />
+      <created>1574057893439</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574057893439</updated>
+      <workItem from="1574057894737" duration="7368000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
