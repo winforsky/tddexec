@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0f97a92-9d47-40e8-85e1-27cedeac28fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/Alarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tddmicroexercises/tirepressuremonitoringsystem/Alarm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tddmicroexercises/tirepressuremonitoringsystem/AlarmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tddmicroexercises/tirepressuremonitoringsystem/AlarmTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574047135201</updated>
-      <workItem from="1574047136499" duration="941000" />
+      <workItem from="1574047136499" duration="1076000" />
     </task>
     <servers />
   </component>
