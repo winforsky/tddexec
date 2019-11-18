@@ -73,4 +73,17 @@ public class TicketDispenserTest
         //ASSERT
         Assert.assertEquals(1001, ticket.getTurnNumber());
     }
+
+    @Test
+    public void test_ticket_number_sequence_of_the_regular_customer_starts_from_2001(){
+        //Arrange
+        TurnNumberSequence regularTurnNumberSequence = new TurnNumberSequence(2001);
+        TicketDispenser ticketDispenser = new TicketDispenser(regularTurnNumberSequence);
+
+        //ACTION
+        TurnTicket ticket = ticketDispenser.getTurnTicket();
+
+        //ASSERT
+        Assert.assertEquals(2001, ticket.getTurnNumber());
+    }
 }
