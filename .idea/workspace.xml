@@ -51,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AlarmTest.test_a_normal_pressure_value_after_a_pressure_value_outside_the_range_should_not_stop_the_alarm">
+  <component name="RunManager" selected="JUnit.AlarmTest.test_a_normal_pressure_value_after_a_pressure_value_outside_the_range_should_stop_the_alarm">
     <configuration name="AlarmTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TirePressureMonitoringSystem" />
       <extension name="coverage">
@@ -78,6 +78,22 @@
       <option name="PACKAGE_NAME" value="tddmicroexercises.tirepressuremonitoringsystem" />
       <option name="MAIN_CLASS_NAME" value="tddmicroexercises.tirepressuremonitoringsystem.AlarmTest" />
       <option name="METHOD_NAME" value="test_a_normal_pressure_value_after_a_pressure_value_outside_the_range_should_not_stop_the_alarm" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlarmTest.test_a_normal_pressure_value_after_a_pressure_value_outside_the_range_should_stop_the_alarm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TirePressureMonitoringSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tddmicroexercises.tirepressuremonitoringsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tddmicroexercises.tirepressuremonitoringsystem" />
+      <option name="MAIN_CLASS_NAME" value="tddmicroexercises.tirepressuremonitoringsystem.AlarmTest" />
+      <option name="METHOD_NAME" value="test_a_normal_pressure_value_after_a_pressure_value_outside_the_range_should_stop_the_alarm" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,29 +131,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlarmTest.testcheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TirePressureMonitoringSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tddmicroexercises.tirepressuremonitoringsystem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tddmicroexercises.tirepressuremonitoringsystem" />
-      <option name="MAIN_CLASS_NAME" value="tddmicroexercises.tirepressuremonitoringsystem.AlarmTest" />
-      <option name="METHOD_NAME" value="testcheck" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AlarmTest.test_a_normal_pressure_value_after_a_pressure_value_outside_the_range_should_stop_the_alarm" />
         <item itemvalue="JUnit.AlarmTest.test_a_normal_pressure_value_after_a_pressure_value_outside_the_range_should_not_stop_the_alarm" />
         <item itemvalue="JUnit.AlarmTest" />
         <item itemvalue="JUnit.AlarmTest.test_a_pressure_value_outside_the_range_should_raise_the_alarm" />
         <item itemvalue="JUnit.AlarmTest.test_a_normal_pressure_value_should_not_raise_the_alarm" />
-        <item itemvalue="JUnit.AlarmTest.testcheck" />
       </list>
     </recent_temporary>
   </component>

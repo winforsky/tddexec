@@ -9,9 +9,9 @@ public class AlarmTest {
     @Test
     public void testcheck() throws Exception {
         assertEquals(6, 2+4);
-        //TODO:实现新特性：若前一次检查的胎压值在正常范围之外并保健，后一次检查的胎压值又回到正常范围，此时需要停止报警。
-        //TODO:the alarm will be turned off before each checking of pressure
-        //TODO:a normal pressure value after a value outside the range should stop the alarm
+        //TO DO:实现新特性：若前一次检查的胎压值在正常范围之外并保健，后一次检查的胎压值又回到正常范围，此时需要停止报警。
+        //TO DO:the alarm will be turned off before each checking of pressure
+        //TO DO:a normal pressure value after a value outside the range should stop the alarm
 
 
         //TO DO:检查到正常的胎压值时不应该报警
@@ -53,7 +53,7 @@ public class AlarmTest {
     }
 
     @Test
-    public void test_a_normal_pressure_value_after_a_pressure_value_outside_the_range_should_not_stop_the_alarm(){
+    public void test_a_normal_pressure_value_after_a_pressure_value_outside_the_range_should_stop_the_alarm(){
         //Arrange
         //因为Alarm依赖Sensor的具体实现，为了增加灵活性和可测试性，需要修改实现方式
 //        Alarm alarm = new Alarm();
@@ -73,7 +73,7 @@ public class AlarmTest {
         alarm.check();
 
         //Assert
-        assertTrue(alarm.isAlarmOn());
+        assertFalse(alarm.isAlarmOn());
     }
 
 }
