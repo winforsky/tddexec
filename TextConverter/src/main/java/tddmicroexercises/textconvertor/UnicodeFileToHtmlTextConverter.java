@@ -18,7 +18,7 @@ public class UnicodeFileToHtmlTextConverter
     public String convertToHtml() throws IOException
     {
         try (BufferedReader reader = new BufferedReader(new FileReader(fullFilenameWithPath)))
-        {
+            {
 
             String line = reader.readLine();
             String html = "";
