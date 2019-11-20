@@ -10,14 +10,17 @@ public class PhoneClock extends Clock {
         super(utcOffset);
     }
 
-    public void setLocalTime(int localTime) {
-        this.localTime = localTime;
-        if (this.clockSystem == null){
+    private void updateUtcZeroTimeForClockInClockSystem(int localTime) {
+        if (this.clockSystem == null) {
             return;
         }
         for (CityClock cityClock : this.clockSystem.getCityClocks()) {
             cityClock.setUtcZeroTime(localTime - super.utcOffset);
         }
+    }
+
+    private void updateLocalTime(int localTime) {
+        this.localTime = localTime;
     }
 
     public void setClockSystem(HotelWorldClockSystem clockSystem) {
@@ -27,5 +30,10 @@ public class PhoneClock extends Clock {
     @Override
     public int getLocalTime() {
         return this.localTime;
+    }
+
+    public void setLocalTime(int localTime) {
+        updateLocalTime(localTime);
+        updateUtcZeroTimeForClockInClockSystem(localTime);
     }
 }

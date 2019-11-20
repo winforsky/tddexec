@@ -1,7 +1,5 @@
 package Clock;
 
-import Clock.Clock;
-
 public class CityClock extends Clock {
     private int utcZeroTime;
 
