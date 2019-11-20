@@ -7,5 +7,5 @@ public abstract class Clock {
         this.utcOffset = utcOffset;
     }
 
-    public abstract int getTime();
+    public abstract int getLocalTime();
 }

@@ -15,10 +15,10 @@ public class HotelWorldClockTest {
         HotelWorldClockSystem clockSystem = new HotelWorldClockSystem();
         clockSystem.attach(londonClock);
         phoneClock.setClockSystem(clockSystem);
-        phoneClock.setTime(9);
+        phoneClock.setLocalTime(9);
 
         //Assert
-        Assert.assertEquals(1, londonClock.getTime());
+        Assert.assertEquals(1, londonClock.getLocalTime());
     }
 
     @Test
@@ -31,10 +31,10 @@ public class HotelWorldClockTest {
         HotelWorldClockSystem clockSystem = new HotelWorldClockSystem();
         clockSystem.attach(newyourkClock);
         phoneClock.setClockSystem(clockSystem);
-        phoneClock.setTime(9);
+        phoneClock.setLocalTime(9);
 
         //Assert
-        Assert.assertEquals(20, newyourkClock.getTime());
+        Assert.assertEquals(20, newyourkClock.getLocalTime());
     }
 
     @Test
@@ -51,11 +51,11 @@ public class HotelWorldClockTest {
 
         //Act
         phoneClock.setClockSystem(clockSystem);
-        phoneClock.setTime(9);
+        phoneClock.setLocalTime(9);
 
         //Assert
-        Assert.assertEquals(1, londonClock.getTime());
-        Assert.assertEquals(20, newyourkClock.getTime());
+        Assert.assertEquals(1, londonClock.getLocalTime());
+        Assert.assertEquals(20, newyourkClock.getLocalTime());
     }
 
     @Test
@@ -64,10 +64,10 @@ public class HotelWorldClockTest {
         PhoneClock phoneClock = new PhoneClock(8);
 
         //Act
-        phoneClock.setTime(9);
+        phoneClock.setLocalTime(9);
 
         //Assert
-        Assert.assertEquals(9, phoneClock.getTime());
+        Assert.assertEquals(9, phoneClock.getLocalTime());
     }
 
     @Test
@@ -80,9 +80,9 @@ public class HotelWorldClockTest {
         HotelWorldClockSystem clockSystem = new HotelWorldClockSystem();
         clockSystem.attach(moscowClock);
         phoneClock.setClockSystem(clockSystem);
-        phoneClock.setTime(9);
+        phoneClock.setLocalTime(9);
 
         //Assert
-        Assert.assertEquals(5, moscowClock.getTime());
+        Assert.assertEquals(5, moscowClock.getLocalTime());
     }
 }

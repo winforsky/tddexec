@@ -10,7 +10,7 @@ public class CityClock extends Clock {
     }
 
     @Override
-    public int getTime() {
+    public int getLocalTime() {
         return (super.utcOffset + this.utcZeroTime + 24) % 24;
     }
 

@@ -4,19 +4,19 @@ import HotelWorldClockSystem.HotelWorldClockSystem;
 
 public class PhoneClock extends Clock {
     private HotelWorldClockSystem clockSystem;
-    private int time;
+    private int localTime;
 
     public PhoneClock(int utcOffset) {
         super(utcOffset);
     }
 
-    public void setTime(int time) {
-        this.time = time;
+    public void setLocalTime(int localTime) {
+        this.localTime = localTime;
         if (this.clockSystem == null){
             return;
         }
         for (CityClock cityClock : this.clockSystem.getCityClocks()) {
-            cityClock.setUtcZeroTime(time - super.utcOffset);
+            cityClock.setUtcZeroTime(localTime - super.utcOffset);
         }
     }
 
@@ -25,7 +25,7 @@ public class PhoneClock extends Clock {
     }
 
     @Override
-    public int getTime() {
-        return this.time;
+    public int getLocalTime() {
+        return this.localTime;
     }
 }
