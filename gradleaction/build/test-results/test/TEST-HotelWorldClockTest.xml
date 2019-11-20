@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="HotelWorldClockTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-20T10:26:56" hostname="asp.local" time="0.002">
+<testsuite name="HotelWorldClockTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-20T10:30:59" hostname="asp.local" time="0.009">
   <properties/>
-  <testcase name="test_london_time_should_be_1_after_phone_clock_set_to_beijing_time_9" classname="HotelWorldClockTest" time="0.002"/>
+  <testcase name="test_london_time_should_be_1_after_phone_clock_set_to_beijing_time_9" classname="HotelWorldClockTest" time="0.005"/>
+  <testcase name="test_newyork_time_should_be_20_after_phone_clock_set_to_beijing_time_9" classname="HotelWorldClockTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
