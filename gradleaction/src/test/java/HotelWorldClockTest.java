@@ -1,11 +1,8 @@
-import CityClock.CityClock;
+import Clock.CityClock;
 import HotelWorldClockSystem.HotelWorldClockSystem;
-import PhoneClock.PhoneClock;
+import Clock.PhoneClock;
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.util.Calendar;
-import java.util.Date;
 
 public class HotelWorldClockTest {
     @Test
@@ -59,5 +56,33 @@ public class HotelWorldClockTest {
         //Assert
         Assert.assertEquals(1, londonClock.getTime());
         Assert.assertEquals(20, newyourkClock.getTime());
+    }
+
+    @Test
+    public void test_phone_time_should_be_9_after_phone_clock_set_to_beijing_time_9(){
+        //Arrange
+        PhoneClock phoneClock = new PhoneClock(8);
+
+        //Act
+        phoneClock.setTime(9);
+
+        //Assert
+        Assert.assertEquals(9, phoneClock.getTime());
+    }
+
+    @Test
+    public void test_moscow_time_should_be_5_after_phone_clock_set_to_beijing_time_9(){
+        //Arrange
+        CityClock moscowClock = new CityClock(4);
+        PhoneClock phoneClock = new PhoneClock(8);
+
+        //Act
+        HotelWorldClockSystem clockSystem = new HotelWorldClockSystem();
+        clockSystem.attach(moscowClock);
+        phoneClock.setClockSystem(clockSystem);
+        phoneClock.setTime(9);
+
+        //Assert
+        Assert.assertEquals(5, moscowClock.getTime());
     }
 }

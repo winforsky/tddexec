@@ -1,23 +1,31 @@
-package PhoneClock;
+package Clock;
 
-import CityClock.CityClock;
 import HotelWorldClockSystem.HotelWorldClockSystem;
 
-public class PhoneClock {
-    private int utcOffset;
+public class PhoneClock extends Clock {
     private HotelWorldClockSystem clockSystem;
+    private int time;
 
     public PhoneClock(int utcOffset) {
-        this.utcOffset = utcOffset;
+        super(utcOffset);
     }
 
     public void setTime(int time) {
+        this.time = time;
+        if (this.clockSystem == null){
+            return;
+        }
         for (CityClock cityClock : this.clockSystem.getCityClocks()) {
-            cityClock.setUtcZeroTime(time - this.utcOffset);
+            cityClock.setUtcZeroTime(time - super.utcOffset);
         }
     }
 
     public void setClockSystem(HotelWorldClockSystem clockSystem) {
         this.clockSystem = clockSystem;
+    }
+
+    @Override
+    public int getTime() {
+        return this.time;
     }
 }

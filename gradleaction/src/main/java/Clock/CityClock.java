@@ -1,15 +1,17 @@
-package CityClock;
+package Clock;
 
-public class CityClock {
-    private int utcOffset;
+import Clock.Clock;
+
+public class CityClock extends Clock {
     private int utcZeroTime;
 
     public CityClock(int utcOffset) {
-        this.utcOffset = utcOffset;
+        super(utcOffset);
     }
 
+    @Override
     public int getTime() {
-        return (this.utcOffset + this.utcZeroTime + 24) % 24;
+        return (super.utcOffset + this.utcZeroTime + 24) % 24;
     }
 
     public void setUtcZeroTime(int utcZeroTime) {

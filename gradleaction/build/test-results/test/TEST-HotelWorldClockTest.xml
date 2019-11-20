@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="HotelWorldClockTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-20T10:42:31" hostname="asp.local" time="0.004">
+<testsuite name="HotelWorldClockTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-11-20T11:02:32" hostname="asp.local" time="0.004">
   <properties/>
-  <testcase name="test_london_time_should_be_1_after_phone_clock_set_to_beijing_time_9" classname="HotelWorldClockTest" time="0.003"/>
+  <testcase name="test_moscow_time_should_be_5_after_phone_clock_set_to_beijing_time_9" classname="HotelWorldClockTest" time="0.002"/>
+  <testcase name="test_phone_time_should_be_9_after_phone_clock_set_to_beijing_time_9" classname="HotelWorldClockTest" time="0.0"/>
+  <testcase name="test_london_time_should_be_1_after_phone_clock_set_to_beijing_time_9" classname="HotelWorldClockTest" time="0.0"/>
   <testcase name="test_newyork_time_should_be_20_after_phone_clock_set_to_beijing_time_9" classname="HotelWorldClockTest" time="0.0"/>
   <testcase name="test_london_time_should_be_1_newyork_time_should_be_20_after_phone_clock_set_to_beijing_time_9" classname="HotelWorldClockTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

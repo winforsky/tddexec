@@ -1,6 +1,6 @@
 package HotelWorldClockSystem;
 
-import CityClock.CityClock;
+import Clock.CityClock;
 
 import java.util.ArrayList;
 
