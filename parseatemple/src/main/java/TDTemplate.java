@@ -15,14 +15,16 @@ public class TDTemplate {
     }
 
     public void set(String variable, String value) {
-//        this.variableValue = value;
         this.variables.put(variable, value);
     }
 
     public String evaluate() {
-
         TDTemplateParse parse = new TDTemplateParse();
         List<String> segments = parse.parse(templateText);
+        return concatenate(segments);
+    }
+
+    private String concatenate(List<String> segments) {
         StringBuilder result = new StringBuilder();
         for (String segment: segments){
             append(segment, result);
@@ -42,20 +44,4 @@ public class TDTemplate {
         }
     }
 
-    private String replaceVariables() {
-        String result = templateText;
-        for (Map.Entry<String, String> entry :
-                variables.entrySet()) {
-            String regex = "\\$\\{" + entry.getKey() + "\\}";
-            result = result.replaceAll(regex, entry.getValue());
-        }
-        return result;
-    }
-
-    private void checkForMissingValues(String result) {
-        Matcher matcher = Pattern.compile(".*\\$\\{.+\\}.*").matcher(result);
-        if (matcher.find()) {
-            throw new MissingValueException("No value for " + matcher.group());
-        }
-    }
 }
