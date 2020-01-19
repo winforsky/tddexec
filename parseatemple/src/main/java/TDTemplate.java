@@ -37,14 +37,14 @@ public class TDTemplate {
 
     public String evaluate() {
         TDTemplateParse parse = new TDTemplateParse();
-        List<String> segments = parse.parse(templateText);
+        List<TDSegment> segments = parse.parseSegment(templateText);
         return concatenate(segments);
     }
 
-    private String concatenate(List<String> segments) {
+    private String concatenate(List<TDSegment> segments) {
         StringBuilder result = new StringBuilder();
-        for (String segment: segments){
-            append(segment, result);
+        for (TDSegment segment: segments){
+            result.append(segment.evaluate(variables));
         }
         return result.toString();
     }
