@@ -6,13 +6,17 @@ public class TDVariable implements TDSegment {
     public TDVariable(String text) {
         this.text = text;
     }
+
     @Override
     public boolean equals(Object obj) {
-        return text.equals(((TDVariable)obj).text);
+        return text.equals(((TDVariable) obj).text);
     }
 
     @Override
     public String evaluate(Map<String, String> variables) {
+        if (!variables.containsKey(text)) {
+            throw new MissingValueException("No value for ${" + text + "}");
+        }
         return variables.get(text);
     }
 }
