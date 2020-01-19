@@ -44,4 +44,12 @@ public class TempleParseTests {
         template.set("three", "three");
         assertEquals("Hello, one, two, three", template.evaluate());
     }
+
+    @Test
+    public void unknownVariableAreIgnored() throws Exception {
+        TDTemplate template = new TDTemplate("Hello, ${name}");
+        template.set("name", "Reader");
+        template.set("doesnotexist", "Hi");
+        assertEquals("Hello, Reader", template.evaluate());
+    }
 }
