@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TempleParseTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-19T07:07:03" hostname="asp.local" time="0.002">
+<testsuite name="TempleParseTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-19T07:23:46" hostname="asp.local" time="0.002">
   <properties/>
   <testcase name="unknownVariableAreIgnored" classname="TempleParseTests" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
