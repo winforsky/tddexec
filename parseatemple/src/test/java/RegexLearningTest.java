@@ -20,5 +20,7 @@ public class RegexLearningTest {
         String regex = "(needle)";
         Matcher matcher = Pattern.compile(regex).matcher(haystack);
         Assert.assertTrue(matcher.find());
+        Assert.assertEquals("Wrong start index of 1st match", 4, matcher.start());
+        Assert.assertEquals("Wrong end index of 1st match", 10, matcher.end());
     }
 }
