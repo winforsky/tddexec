@@ -41,6 +41,14 @@ public class TempleParseTests {
         }
     }
 
+    @Test
+    public void variableGetProcessedJustOnce() throws Exception {
+        template.set("one", "${one}");
+        template.set("two", "${two}");
+        template.set("three", "${three}");
+        assertTemplateEvaluateTo("Hello, ${one}, ${two}, ${three}", template);
+    }
+
     private void assertTemplateEvaluateTo(String result, TDTemplate template) {
         assertEquals(result, template.evaluate());
     }
