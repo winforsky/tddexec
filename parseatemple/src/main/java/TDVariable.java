@@ -13,6 +13,6 @@ public class TDVariable implements TDSegment {
 
     @Override
     public String evaluate(Map<String, String> variables) {
-        return null;
+        return variables.get(text);
     }
 }
