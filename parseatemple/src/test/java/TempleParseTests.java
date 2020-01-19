@@ -2,6 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 public class TempleParseTests {
 
@@ -27,6 +28,16 @@ public class TempleParseTests {
     public void unknownVariableAreIgnored() throws Exception {
         template.set("doesnotexist", "Hi");
         assertTemplateEvaluateTo("Hello, one, two, three", template);
+    }
+
+    @Test
+    public void missingValueRaiseException() throws Exception {
+        try {
+            new TDTemplate("${foo}").evaluate();
+            fail("evaluate() should throw an exception if a variable was left without a value!");
+        }catch (MissingValueException expected){
+
+        }
     }
 
     private void assertTemplateEvaluateTo(String result, TDTemplate template) {
