@@ -33,9 +33,14 @@ public class TempleParseTests {
 
     @Test
     public void multipleVariables() throws Exception {
+        //实现此模版的测试用例过程中发现：
+        //当使用模版中的变量名进行模版变量赋值时，期望的是变量名，
+        //如"Hello, ${one}, ${two}, ${three}" 赋值 "Hello, 1, ${two}, 3"
         TDTemplate template = new TDTemplate("Hello, ${one}, ${two}, ${three}");
         template.set("one", "one");
         template.set("two", "two");
+//        template.set("two", "${two}");
+        //先记录问题，并专心完成当前的代码编写
         template.set("three", "three");
         assertEquals("Hello, one, two, three", template.evaluate());
     }
