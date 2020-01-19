@@ -8,6 +8,6 @@ public class TDTemplate {
     }
 
     public String evaluate() {
-        return null;
+        return "Hello, Reader";
     }
 }
