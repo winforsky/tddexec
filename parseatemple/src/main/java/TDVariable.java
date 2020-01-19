@@ -1,4 +1,6 @@
-public class TDVariable extends TDSegment {
+import java.util.Map;
+
+public class TDVariable implements TDSegment {
     private String text;
 
     public TDVariable(String text) {
@@ -7,5 +9,10 @@ public class TDVariable extends TDSegment {
     @Override
     public boolean equals(Object obj) {
         return text.equals(((TDVariable)obj).text);
+    }
+
+    @Override
+    public String evaluate(Map<String, String> variables) {
+        return null;
     }
 }
