@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TempleParseTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-19T07:34:23" hostname="asp.local" time="0.012">
+<testsuite name="TempleParseTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-19T07:36:09" hostname="asp.local" time="0.003">
   <properties/>
-  <testcase name="multipleVariables" classname="TempleParseTests" time="0.003"/>
-  <testcase name="unknownVariableAreIgnored" classname="TempleParseTests" time="0.003"/>
-  <testcase name="missingValueRaiseException" classname="TempleParseTests" time="0.001"/>
+  <testcase name="missingValueRaiseException" classname="TempleParseTests" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

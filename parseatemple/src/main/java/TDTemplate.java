@@ -17,18 +17,21 @@ public class TDTemplate {
     }
 
     public String evaluate() {
-//        return "Hello, " + this.variableValue;
-        //注意这里的硬编码：遍历名
-//        return templateText.replaceAll("\\$\\{name\\}", variableValue);
+
+        String result = replaceVariables();
+
+        checkForMissingValues(result);
+
+        return result;
+    }
+
+    private String replaceVariables() {
         String result = templateText;
         for (Map.Entry<String, String> entry :
                 variables.entrySet()) {
             String regex = "\\$\\{"+entry.getKey()+"\\}";
             result = result.replaceAll(regex, entry.getValue());
         }
-
-        checkForMissingValues(result);
-
         return result;
     }
 
