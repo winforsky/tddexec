@@ -52,4 +52,8 @@ public class TDTemplateParse {
             segments.add(src.substring(index, matcher.start()));
         }
     }
+
+    public List<TDSegment> parseSegment(String src) {
+        return null;
+    }
 }
