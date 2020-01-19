@@ -6,6 +6,10 @@ import java.util.List;
 
 public class TDTemplateParseTest {
 
+    //这里发现一个问题：
+    //测试类中的方法并没有准备任何数据，也没有配置任何对象状态
+    //所以：也许这个方法或许应该是静态方法
+
     @Test
     public void emptyTemplateRendersAsEmptyString(){
         List<String> segments = parse("");
