@@ -18,6 +18,23 @@ public class TDTemplate {
         this.variables.put(variable, value);
     }
 
+    /*
+    * 统一处理不同的片段类型
+    * public String evaluate() {
+        TDTemplateParse parse = new TDTemplateParse();
+        List<TDSegment> segments = parse.parse(templateText);
+        return concatenate(segments);
+    }
+
+    private String concatenate(List<TDSegment> segments) {
+        StringBuilder result = new StringBuilder();
+        for (TDSegment segment: segments){
+            segment.append(result, variables);
+        }
+        return result.toString();
+    }
+    * */
+
     public String evaluate() {
         TDTemplateParse parse = new TDTemplateParse();
         List<String> segments = parse.parse(templateText);
