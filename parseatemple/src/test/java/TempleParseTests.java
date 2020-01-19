@@ -30,4 +30,13 @@ public class TempleParseTests {
         template.set("name", "Reader");
         assertEquals("Hi, Reader", template.evaluate());
     }
+
+    @Test
+    public void multipleVariables() throws Exception {
+        TDTemplate template = new TDTemplate("Hello, ${one}, ${two}, ${three}");
+        template.set("one", "one");
+        template.set("two", "two");
+        template.set("three", "three");
+        assertEquals("Hello, one, two, three", template.evaluate());
+    }
 }
