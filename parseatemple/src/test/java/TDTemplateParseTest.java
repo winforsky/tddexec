@@ -7,16 +7,19 @@ public class TDTemplateParseTest {
 
     @Test
     public void emptyTemplateRendersAsEmptyString(){
-        TDTemplateParse parse = new TDTemplateParse();
-        List<String> segments = parse.parse("");
+        List<String> segments = parse("");
         Assert.assertEquals("Number of segments", 1, segments.size());
         Assert.assertEquals("", segments.get(0));
     }
 
+    private List<String> parse(String templateText) {
+        TDTemplateParse parse = new TDTemplateParse();
+        return parse.parse(templateText);
+    }
+
     @Test
     public void templateWithOnlyPlainText(){
-        TDTemplateParse parse = new TDTemplateParse();
-        List<String> segments = parse.parse("plain text only");
+        List<String> segments = parse("plain text only");
         Assert.assertEquals("Number of segments", 1, segments.size());
         Assert.assertEquals("plain text only", segments.get(0));
     }
