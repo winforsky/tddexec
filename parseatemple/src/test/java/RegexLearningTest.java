@@ -22,5 +22,11 @@ public class RegexLearningTest {
         Assert.assertTrue(matcher.find());
         Assert.assertEquals("Wrong start index of 1st match", 4, matcher.start());
         Assert.assertEquals("Wrong end index of 1st match", 10, matcher.end());
+
+        Assert.assertTrue(matcher.find());
+        Assert.assertEquals("Wrong start index of 2nd match", 22, matcher.start());
+        Assert.assertEquals("Wrong end index of 2nd match", 28, matcher.end());
+
+        Assert.assertFalse("should not have any more matches",matcher.find());
     }
 }
