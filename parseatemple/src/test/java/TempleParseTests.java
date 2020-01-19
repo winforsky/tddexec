@@ -36,7 +36,8 @@ public class TempleParseTests {
             new TDTemplate("${foo}").evaluate();
             fail("evaluate() should throw an exception if a variable was left without a value!");
         }catch (MissingValueException expected){
-
+            //异常中应该提供尽量多的信息
+            assertEquals("No value for ${foo}", expected.getMessage());
         }
     }
 

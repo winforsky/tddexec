@@ -1,5 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class TDTemplate {
     private final Map<String, String> variables;
@@ -29,15 +31,16 @@ public class TDTemplate {
         String result = templateText;
         for (Map.Entry<String, String> entry :
                 variables.entrySet()) {
-            String regex = "\\$\\{"+entry.getKey()+"\\}";
+            String regex = "\\$\\{" + entry.getKey() + "\\}";
             result = result.replaceAll(regex, entry.getValue());
         }
         return result;
     }
 
     private void checkForMissingValues(String result) {
-        if (result.matches(".*\\$\\{.+\\}.*")){
-            throw new MissingValueException();
+        Matcher matcher = Pattern.compile(".*\\$\\{.+\\}.*").matcher(result);
+        if (matcher.find()) {
+            throw new MissingValueException("No value for " + matcher.group());
         }
     }
 }
