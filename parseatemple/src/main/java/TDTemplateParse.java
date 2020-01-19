@@ -54,6 +54,16 @@ public class TDTemplateParse {
     }
 
     public List<TDSegment> parseSegment(String src) {
-        return null;
+        List<TDSegment> segments = new ArrayList<TDSegment>();
+        List<String> strings = parse(src);
+        for (String s : strings) {
+            //注意这里，消除if-else的关键，提前判定，并非直接使用时再进行判定
+            if (TDTemplate.isVariable(s)) {
+                segments.add(new TDVariable(s.substring(2, s.length() - 1)));
+            } else {
+                segments.add(new TDPlainText(s));
+            }
+        }
+        return segments;
     }
 }

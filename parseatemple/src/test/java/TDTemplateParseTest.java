@@ -31,9 +31,9 @@ public class TDTemplateParseTest {
     @Test
     public void templateWithMultiVariablesIntoSegment(){
         //这里为了保持兼容原来的测试，保留原来的方法，新增需要的方法
-//        TDTemplateParse parse = new TDTemplateParse();
-//        List<TDSegment> segments = parse.parseSegment("a ${b} c ${d}");
-//        assertSegments(segments, new TDPlainText("a "), new TDVariable("b"), new TDPlainText(" c "), new TDVariable("d"));
+        TDTemplateParse parse = new TDTemplateParse();
+        List<TDSegment> segments = parse.parseSegment("a ${b} c ${d}");
+        assertSegments(segments, new TDPlainText("a "), new TDVariable("b"), new TDPlainText(" c "), new TDVariable("d"));
     }
 
 
