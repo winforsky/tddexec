@@ -1,12 +1,9 @@
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class TDTemplate {
     private final Map<String, String> variables;
-    private String variableValue;
     private String templateText;
 
     public TDTemplate(String templateText) {
@@ -48,25 +45,4 @@ public class TDTemplate {
         }
         return result.toString();
     }
-
-    private void append(String segment, StringBuilder result) {
-        if (isVariable(segment)){
-            evaluateVariable(segment, result);
-        }else {
-            result.append(segment);
-        }
-    }
-
-    private void evaluateVariable(String segment, StringBuilder result) {
-        String var = segment.substring(2, segment.length()-1);
-        if (!variables.containsKey(var)){
-            throw new MissingValueException("No value for " + segment);
-        }
-        result.append(variables.get(var));
-    }
-
-    public static boolean isVariable(String segment) {
-        return segment.startsWith("${") && segment.endsWith("}");
-    }
-
 }
